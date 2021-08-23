@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Clivern"]
   spec.email         = ["hello@clivern.com"]
 
-  spec.summary       = "Primitives for Functional Programming"
+  spec.summary       = "Primitives for Functional Programming in Ruby"
   spec.description   = "A Set of Functional Primitives for Ruby, heavily inspired by Underscore.js"
   spec.homepage      = "https://github.com/Clivern/Scone"
   spec.license       = "MIT"
