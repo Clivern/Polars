@@ -34,6 +34,13 @@ console:
 	./bin/console
 
 
+## setup: Setup dependencies.
+.PHONY: setup
+setup:
+	@echo ">> ============= Setup Dependencies ============= <<"
+	./bin/setup
+
+
 ## build: Build the ruby gem.
 .PHONY: build
 build:
@@ -46,6 +53,20 @@ build:
 push:
 	@echo ">> ============= Publish the Package ============= <<"
 	$(GEM) push scone-*.gem
+
+
+## install: Install the gem locally.
+.PHONY: install
+install:
+	@echo ">> ============= Install Locally ============= <<"
+	$(RAKE) install
+
+
+## release: Release the gem.
+.PHONY: release
+release:
+	@echo ">> =========== Release the Package =========== <<"
+	$(RAKE) release
 
 
 ## ci: Run all CI tests.

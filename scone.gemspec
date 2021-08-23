@@ -8,13 +8,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Clivern"]
   spec.email         = ["hello@clivern.com"]
 
-  spec.summary       = ""
-  spec.description   = ""
+  spec.summary       = "Primitives for Functional Programming"
+  spec.description   = "A Set of Functional Primitives for Ruby, heavily inspired by Underscore.js"
   spec.homepage      = "https://github.com/Clivern/Scone"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
-
-  # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/Clivern/Scone"
