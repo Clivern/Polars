@@ -14,9 +14,6 @@
 #    limitations under the License.
 #
 
-require_relative "scone/version"
+module Package
 
-module Scone
-  class Error < StandardError; end
-  # Your code goes here...
 end

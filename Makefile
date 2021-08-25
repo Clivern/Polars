@@ -14,8 +14,8 @@ help: Makefile
 
 
 ## docs: Generate Docs
-.PHONY: doc
-doc:
+.PHONY: docs
+docs:
 	@echo ">> ============= Generate Docs ============= <<"
 	$(RDOC)
 

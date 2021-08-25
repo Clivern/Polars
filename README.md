@@ -1,6 +1,6 @@
 # Scone
 
-A Set of Functional Primitives for Ruby, heavily inspired by Underscore.js
+A Set of Modules to work with a different Linux Operating System Distributions in Ruby.
 
 ## Installation
 
