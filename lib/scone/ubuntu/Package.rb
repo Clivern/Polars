@@ -15,5 +15,4 @@
 #
 
 module Package
-
 end

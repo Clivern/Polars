@@ -3,6 +3,7 @@ RDOC        ?= rdoc
 BUNDLE      ?= bundle
 RAKE        ?= rake
 GEM         ?= gem
+RUFO        ?= rufo
 
 
 help: Makefile
@@ -67,6 +68,14 @@ install:
 release:
 	@echo ">> =========== Release the Package =========== <<"
 	$(RAKE) release
+
+
+## format: Format the ruby code.
+.PHONY: format
+format:
+	@echo ">> ============= Format the Code ============= <<"
+	$(GEM) install rufo
+	$(RUFO) .
 
 
 ## ci: Run all CI tests.

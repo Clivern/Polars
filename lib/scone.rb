@@ -18,5 +18,6 @@ require_relative "scone/version"
 
 module Scone
   class Error < StandardError; end
+
   # Your code goes here...
 end
