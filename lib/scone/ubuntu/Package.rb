@@ -14,5 +14,7 @@
 #    limitations under the License.
 #
 
-module Package
+module Scone
+  module Ubuntu
+  end
 end

@@ -14,5 +14,7 @@
 #    limitations under the License.
 #
 
-module System
+module Scone
+  module IO
+  end
 end

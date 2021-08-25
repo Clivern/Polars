@@ -15,6 +15,9 @@
 #
 
 module Scone
-  module IO
+  module Platform
+    def self.get_platform
+      :UBUNTU
+    end
   end
 end
