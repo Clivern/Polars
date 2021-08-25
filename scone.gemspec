@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Scone - A Unified SDK for Linux OS Distributions in Ruby
 #

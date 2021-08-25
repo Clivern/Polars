@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Scone - A Unified SDK for Linux OS Distributions in Ruby
 #
@@ -14,6 +16,7 @@
 #    limitations under the License.
 #
 
+# Scone Module
 module Scone
-  VERSION = "0.1.5"
+  VERSION = "0.1.6"
 end

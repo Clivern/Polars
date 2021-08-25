@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Scone - A Unified SDK for Linux OS Distributions in Ruby
 #
@@ -14,7 +16,7 @@
 #    limitations under the License.
 #
 
-RSpec.describe Scone do
+RSpec.describe "scone" do
   it "has a version number" do
     expect(Scone::VERSION).not_to be nil
   end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Scone - A Unified SDK for Linux OS Distributions in Ruby
 #
@@ -14,9 +16,11 @@
 #    limitations under the License.
 #
 
+# Scone Module
 module Scone
+  # Platform Module
   module Platform
-    def self.get_platform
+    def self.platform
       :UBUNTU
     end
   end

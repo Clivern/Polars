@@ -3,7 +3,7 @@ RDOC        ?= rdoc
 BUNDLE      ?= bundle
 RAKE        ?= rake
 GEM         ?= gem
-RUFO        ?= rufo
+RUBOCOP     ?= rubocop
 
 
 help: Makefile
@@ -74,13 +74,12 @@ release:
 .PHONY: format
 format:
 	@echo ">> ============= Format the Code ============= <<"
-	$(GEM) install rufo
-	$(RUFO) .
+	$(RUBOCOP) -a
 
 
 ## ci: Run all CI tests.
 .PHONY: ci
-ci: test
+ci: test format
 	@echo "\n==> All quality checks passed"
 
 
