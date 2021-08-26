@@ -18,5 +18,14 @@
 
 # Scone Module
 module Scone
-  VERSION = "0.1.13"
+  # Ubuntu Module
+  module Ubuntu
+    # Hardware Class
+    class Hardware
+      # Get total cores
+      def total_cores(proc_file = "/proc/cpuinfo")
+        File.readlines(proc_file).count { |line| line =~ /^processor\s+:\s+\d+/ }
+      end
+    end
+  end
 end

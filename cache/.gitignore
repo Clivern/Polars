@@ -1,4 +1,5 @@
 *
 !proc.stat.txt
 !ifconfig.txt
+!proc.cpuinfo.txt
 !.gitignore

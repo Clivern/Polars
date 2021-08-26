@@ -16,7 +16,16 @@
 #    limitations under the License.
 #
 
-# Scone Module
-module Scone
-  VERSION = "0.1.13"
+require "scone/ubuntu/hardware"
+
+RSpec.describe("scone.ubuntu.hardware") do
+  it "hardware instance is not nil" do
+    result = Scone::Ubuntu::Hardware.new
+    expect(result).not_to(be(nil))
+  end
+
+  it "validate `cache/proc.cpuinfo.txt` values" do
+    cores_count = Scone::Ubuntu::Hardware.new.total_cores("#{Dir.pwd}/cache/proc.cpuinfo.txt")
+    expect(cores_count).to(eq(1))
+  end
 end
