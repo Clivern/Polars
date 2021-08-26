@@ -34,7 +34,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/Cliver
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [Apache-2.0 License](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 ## Code of Conduct
 
