@@ -16,12 +16,12 @@
 #    limitations under the License.
 #
 
-RSpec.describe "scone" do
+RSpec.describe("scone") do
   it "has a version number" do
-    expect(Scone::VERSION).not_to be nil
+    expect(Scone::VERSION).not_to(be(nil))
   end
 
   it "does something useful" do
-    expect(true).to eq(true)
+    expect(true).to(eq(true))
   end
 end

@@ -43,23 +43,23 @@ module Scone
           next if info.empty?
 
           hash[info.first.to_sym] = if info.first =~ /^cpu/i
-                                      {
-                                        user: info[1].to_i,
-                                        nice: info[2].to_i,
-                                        system: info[3].to_i,
-                                        idle: info[4].to_i,
-                                        iowait: info[5].to_i,
-                                        irq: info[6].to_i,
-                                        softirq: info[7].to_i,
-                                        steal: info[8].to_i,
-                                        guest: info[9].to_i,
-                                        guest_nice: info[10].to_i
-                                      }
-                                    elsif info.size > 2
-                                      info[1..].map { |e| e.to_i }
-                                    else
-                                      info[1].to_i
-                                    end
+            {
+              user: info[1].to_i,
+              nice: info[2].to_i,
+              system: info[3].to_i,
+              idle: info[4].to_i,
+              iowait: info[5].to_i,
+              irq: info[6].to_i,
+              softirq: info[7].to_i,
+              steal: info[8].to_i,
+              guest: info[9].to_i,
+              guest_nice: info[10].to_i,
+            }
+          elsif info.size > 2
+            info[1..].map { |e| e.to_i }
+          else
+            info[1].to_i
+          end
         end
         hash
       end
