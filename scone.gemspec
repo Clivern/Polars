@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["clivern"]
   spec.email = ["hello@clivern.com"]
 
-  spec.summary = "A Unified SDK for Linux OS Distributions in Ruby."
+  spec.summary = "A Ruby SDK for Different Linux Operating System Distributions."
   spec.description = "A Set of Modules to work with a different Linux Operating System Distributions in Ruby."
   spec.homepage = "https://github.com/Clivern/Scone"
   spec.license = "MIT"
