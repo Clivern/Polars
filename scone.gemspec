@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.summary = "A Ruby SDK for Different Linux Operating System Distributions."
   spec.description = "A Set of Modules to work with a different Linux Operating System Distributions in Ruby."
   spec.homepage = "https://github.com/Clivern/Scone"
-  spec.license = "MIT"
+  spec.license = "Apache-2.0"
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
