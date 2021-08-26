@@ -16,6 +16,8 @@
 #    limitations under the License.
 #
 
+require "scone/version"
+
 RSpec.describe("scone") do
   it "has a version number" do
     expect(Scone::VERSION).not_to(be(nil))

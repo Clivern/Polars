@@ -16,7 +16,22 @@
 #    limitations under the License.
 #
 
-# Scone Module
-module Scone
-  VERSION = "0.1.10"
+require "scone/system"
+
+RSpec.describe("scone.command") do
+  it "command instance is not nil" do
+    expect(Scone::Command.new("echo Hey")).not_to(be(nil))
+  end
+
+  it "result is zero" do
+    expect(Scone::Command.new("echo Hey").run).to(eq(0))
+  end
+
+  it "attr reader have valid values" do
+    cmd = Scone::Command.new("echo Hey")
+    expect(cmd.run).to(eq(0))
+    expect(cmd.output).to(eq("Hey\n"))
+    expect(cmd.command_line).to(eq("echo Hey"))
+    expect(cmd.error).to(eq(""))
+  end
 end

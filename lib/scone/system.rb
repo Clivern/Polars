@@ -16,7 +16,28 @@
 #    limitations under the License.
 #
 
+require "awesome_spawn"
+
 # Scone Module
 module Scone
-  VERSION = "0.1.10"
+  # Command Class
+  class Command
+    def initialize(command)
+      @command = command
+    end
+
+    def run
+      result = AwesomeSpawn.run(@command)
+      @exit_status = result.exit_status
+      @command_line = result.command_line
+      @output = result.output
+      @error = result.error
+      @exit_status
+    end
+
+    attr_reader :exit_status
+    attr_reader :command_line
+    attr_reader :output
+    attr_reader :error
+  end
 end
