@@ -8,7 +8,7 @@ RUBOCOP     ?= rubocop
 
 help: Makefile
 	@echo
-	@echo " Choose a command run in Scone:"
+	@echo " Choose a command run in Polars:"
 	@echo
 	@sed -n 's/^##//p' $< | column -t -s ':' |  sed -e 's/^/ /'
 	@echo
@@ -46,14 +46,14 @@ setup:
 .PHONY: build
 build:
 	@echo ">> ============= Build the Package ============= <<"
-	$(GEM) build scone.gemspec
+	$(GEM) build polars.gemspec
 
 
 ## push: Publish the ruby gem.
 .PHONY: push
 push:
 	@echo ">> ============= Publish the Package ============= <<"
-	$(GEM) push scone-*.gem
+	$(GEM) push polars-*.gem
 
 
 ## install: Install the gem locally.

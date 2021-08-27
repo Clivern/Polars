@@ -1,4 +1,4 @@
-# Scone
+# Polars
 
 A Set of Modules to work with a different Linux Operating System Distributions in Ruby.
 
@@ -7,7 +7,7 @@ A Set of Modules to work with a different Linux Operating System Distributions i
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'scone'
+gem 'polars'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install scone
+    $ gem install polars
 
 ## Usage
 
@@ -30,7 +30,7 @@ To install this gem onto your local machine, run `make install`. To release a ne
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Clivern/Scone. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/Clivern/Scone/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/Clivern/Polars. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/Clivern/Polars/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -38,4 +38,4 @@ The gem is available as open source under the terms of the [Apache-2.0 License](
 
 ## Code of Conduct
 
-Everyone interacting in the Scone project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/Clivern/Scone/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Polars project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/Clivern/Polars/blob/main/CODE_OF_CONDUCT.md).

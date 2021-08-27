@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Scone - A Unified SDK for Linux OS Distributions in Ruby
+# Polars - A Unified SDK for Linux OS Distributions in Ruby
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,7 +16,16 @@
 #    limitations under the License.
 #
 
-# Scone Module
-module Scone
-  VERSION = "0.1.13"
+# Polars Module
+module Polars
+  # Ubuntu Module
+  module Ubuntu
+    # Hardware Class
+    class Hardware
+      # Get total cores
+      def total_cores(proc_file = "/proc/cpuinfo")
+        File.readlines(proc_file).count { |line| line =~ /^processor\s+:\s+\d+/ }
+      end
+    end
+  end
 end

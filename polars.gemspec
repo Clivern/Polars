@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Scone - A Unified SDK for Linux OS Distributions in Ruby
+# Polars - A Unified SDK for Linux OS Distributions in Ruby
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,23 +16,23 @@
 #    limitations under the License.
 #
 
-require_relative "lib/scone/version"
+require_relative "lib/polars/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "scone"
-  spec.version = Scone::VERSION
+  spec.name = "polars"
+  spec.version = Polars::VERSION
   spec.authors = ["clivern"]
   spec.email = ["hello@clivern.com"]
 
   spec.summary = "A Ruby SDK for Different Linux Operating System Distributions."
   spec.description = "A Set of Modules to work with a different Linux Operating System Distributions in Ruby."
-  spec.homepage = "https://github.com/Clivern/Scone"
+  spec.homepage = "https://github.com/Clivern/Polars"
   spec.license = "Apache-2.0"
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/Clivern/Scone"
-  spec.metadata["changelog_uri"] = "https://github.com/Clivern/Scone/blob/main/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/Clivern/Polars"
+  spec.metadata["changelog_uri"] = "https://github.com/Clivern/Polars/blob/main/CHANGELOG.md"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     %x(git ls-files -z).split("\x0").reject do |f|

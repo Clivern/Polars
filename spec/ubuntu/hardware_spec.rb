@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Scone - A Unified SDK for Linux OS Distributions in Ruby
+# Polars - A Unified SDK for Linux OS Distributions in Ruby
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,16 +16,16 @@
 #    limitations under the License.
 #
 
-require "scone/ubuntu/hardware"
+require "polars/ubuntu/hardware"
 
-RSpec.describe("scone.ubuntu.hardware") do
+RSpec.describe("polars.ubuntu.hardware") do
   it "hardware instance is not nil" do
-    result = Scone::Ubuntu::Hardware.new
+    result = Polars::Ubuntu::Hardware.new
     expect(result).not_to(be(nil))
   end
 
   it "validate `cache/proc.cpuinfo.txt` values" do
-    cores_count = Scone::Ubuntu::Hardware.new.total_cores("#{Dir.pwd}/cache/proc.cpuinfo.txt")
+    cores_count = Polars::Ubuntu::Hardware.new.total_cores("#{Dir.pwd}/cache/proc.cpuinfo.txt")
     expect(cores_count).to(eq(1))
   end
 end

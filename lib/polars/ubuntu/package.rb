@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Scone - A Unified SDK for Linux OS Distributions in Ruby
+# Polars - A Unified SDK for Linux OS Distributions in Ruby
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,28 +16,9 @@
 #    limitations under the License.
 #
 
-require "awesome_spawn"
-
-# Scone Module
-module Scone
-  # Command Class
-  class Command
-    def initialize(command)
-      @command = command
-    end
-
-    def run
-      result = AwesomeSpawn.run(@command)
-      @exit_status = result.exit_status
-      @command_line = result.command_line
-      @output = result.output
-      @error = result.error
-      @exit_status
-    end
-
-    attr_reader :exit_status
-    attr_reader :command_line
-    attr_reader :output
-    attr_reader :error
+# Polars Module
+module Polars
+  # Ubuntu Module
+  module Ubuntu
   end
 end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Scone - A Unified SDK for Linux OS Distributions in Ruby
+# Polars - A Unified SDK for Linux OS Distributions in Ruby
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,16 +16,16 @@
 #    limitations under the License.
 #
 
-require "scone/ubuntu/stat"
+require "polars/ubuntu/stat"
 
-RSpec.describe("scone.ubuntu.stat") do
+RSpec.describe("polars.ubuntu.stat") do
   it "stats instance is not nil" do
-    result = Scone::Ubuntu::Stat.new("#{Dir.pwd}/cache/proc.stat.txt")
+    result = Polars::Ubuntu::Stat.new("#{Dir.pwd}/cache/proc.stat.txt")
     expect(result).not_to(be(nil))
   end
 
   it "validate `cache/proc.stat.txt` values" do
-    result = Scone::Ubuntu::Stat.new("#{Dir.pwd}/cache/proc.stat.txt").proc_stat
+    result = Polars::Ubuntu::Stat.new("#{Dir.pwd}/cache/proc.stat.txt").proc_stat
     expect(result[:cpu][:user]).to(eq(70_188))
     expect(result[:cpu][:nice]).to(eq(0))
     expect(result[:cpu][:system]).to(eq(10_456))

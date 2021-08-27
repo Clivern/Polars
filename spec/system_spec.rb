@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Scone - A Unified SDK for Linux OS Distributions in Ruby
+# Polars - A Unified SDK for Linux OS Distributions in Ruby
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,19 +16,19 @@
 #    limitations under the License.
 #
 
-require "scone/system"
+require "polars/system"
 
-RSpec.describe("scone.command") do
+RSpec.describe("polars.command") do
   it "command instance is not nil" do
-    expect(Scone::Command.new("echo Hey")).not_to(be(nil))
+    expect(Polars::Command.new("echo Hey")).not_to(be(nil))
   end
 
   it "result is zero" do
-    expect(Scone::Command.new("echo Hey").run).to(eq(0))
+    expect(Polars::Command.new("echo Hey").run).to(eq(0))
   end
 
   it "attr reader have valid values" do
-    cmd = Scone::Command.new("echo Hey")
+    cmd = Polars::Command.new("echo Hey")
     expect(cmd.run).to(eq(0))
     expect(cmd.output).to(eq("Hey\n"))
     expect(cmd.command_line).to(eq("echo Hey"))

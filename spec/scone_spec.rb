@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Scone - A Unified SDK for Linux OS Distributions in Ruby
+# Polars - A Unified SDK for Linux OS Distributions in Ruby
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@
 #    limitations under the License.
 #
 
-require "scone/version"
+require "polars/version"
 
-RSpec.describe("scone") do
+RSpec.describe("polars") do
   it "has a version number" do
-    expect(Scone::VERSION).not_to(be(nil))
+    expect(Polars::VERSION).not_to(be(nil))
   end
 
   it "does something useful" do

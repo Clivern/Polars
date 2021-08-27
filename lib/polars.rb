@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Scone - A Unified SDK for Linux OS Distributions in Ruby
+# Polars - A Unified SDK for Linux OS Distributions in Ruby
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,12 +16,11 @@
 #    limitations under the License.
 #
 
-# Scone Module
-module Scone
-  # Ubuntu Module
-  module Ubuntu
-    # IP Address Class
-    class IPAddr
-    end
-  end
+require_relative "polars/version"
+
+# Polars Module
+module Polars
+  class Error < StandardError; end
+
+  # Your code goes here...
 end

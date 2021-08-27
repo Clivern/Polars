@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Scone - A Unified SDK for Linux OS Distributions in Ruby
+# Polars - A Unified SDK for Linux OS Distributions in Ruby
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,9 +16,7 @@
 #    limitations under the License.
 #
 
-# Scone Module
-module Scone
-  # Ubuntu Module
-  module Ubuntu
-  end
+# Polars Module
+module Polars
+  VERSION = "0.1.13"
 end

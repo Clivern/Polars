@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    scone (0.1.9)
+    polars (0.1.9)
       awesome_spawn (~> 1.5)
 
 GEM
@@ -54,7 +54,7 @@ DEPENDENCIES
   rspec (~> 3.0)
   rubocop (~> 1.21)
   rubocop-shopify (~> 2.3.0)
-  scone!
+  polars!
 
 BUNDLED WITH
    2.2.29

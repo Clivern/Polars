@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Scone - A Unified SDK for Linux OS Distributions in Ruby
+# Polars - A Unified SDK for Linux OS Distributions in Ruby
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 #    limitations under the License.
 #
 
-require "scone"
+require "polars"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
