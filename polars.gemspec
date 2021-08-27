@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Polars - A Ruby SDK for Different Linux Operating System Distributions
+# Polars - A Ruby SDK to Work With Different Linux Distributions
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -24,8 +24,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["clivern"]
   spec.email = ["hello@clivern.com"]
 
-  spec.summary = "A Ruby SDK for Different Linux Operating System Distributions."
-  spec.description = "A Set of Modules to work with a different Linux Operating System Distributions in Ruby."
+  spec.summary = "A Ruby SDK to Work With Different Linux Distributions."
+  spec.description = "A Ruby SDK to Work With Different Linux Distributions."
   spec.homepage = "https://github.com/Clivern/Polars"
   spec.license = "Apache-2.0"
   spec.required_ruby_version = ">= 2.6.0"

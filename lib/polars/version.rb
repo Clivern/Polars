@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# Polars - A Ruby SDK for Different Linux Operating System Distributions
+# Polars - A Ruby SDK to Work With Different Linux Distributions
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -18,5 +18,5 @@
 
 # Polars Module
 module Polars
-  VERSION = "0.1.15"
+  VERSION = "0.1.16"
 end

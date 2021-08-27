@@ -1,6 +1,6 @@
 # Polars
 
-A Set of Modules to work with a different Linux Operating System Distributions in Ruby.
+A Ruby SDK to Work With Different Linux Distributions.
 
 ## Installation
 
